@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "CSharpOnlyBots": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\Shaked\\Koofr\\Documents\\Visual Studio 2022\\Projects\\StrategyGameRunner\\CSharpRunner\\Bot1.cs\" \"C:\\Users\\Shaked\\Koofr\\Documents\\Visual Studio 2022\\Projects\\StrategyGameRunner\\CSharpRunner\\Bot2.cs\" StrategyGameRunner/map.smap",
+      "workingDirectory": "C:\\Users\\Shaked\\Koofr\\Documents\\Visual Studio 2022\\Projects\\StrategyGameRunner"
+    }
+  }
+}

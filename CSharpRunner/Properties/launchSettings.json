@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "CSharpRunner": {
+      "commandName": "Project",
+      "commandLineArgs": "Bot2.cs 2",
+      "workingDirectory": "C:\\Users\\Shaked\\Koofr\\Documents\\Visual Studio 2022\\Projects\\StrategyGameRunner\\CSharpRunner"
+    }
+  }
+}

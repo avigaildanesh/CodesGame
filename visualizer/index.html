@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Animation</title>
+  <style>
+    .container {
+      height: 100%;
+    }
+
+    #myCanvas {
+      width: 100%;
+      border: 1px solid #000;
+      background-color: #000;
+    }
+
+    .messagesContainer {
+      display: flex;
+      background-color: white;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: large;
+      /* height: 100vh; */
+    }
+
+    .messagesContainer>* {
+      width: 100%;
+    }
+
+    #bot0Messages {
+      color: cyan;
+    }
+
+    #bot1Messages {
+      color: blue
+    }
+
+    #bot2Messages {
+      color: red
+    }
+
+    #bot1Score,
+    #bot2Score {
+      font-size: larger;
+      color: black;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+    }
+
+    .gameContainer {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="messagesContainer">
+    <div>
+      <div id="bot1Score"></div>
+      <div id="bot1Messages"></div>
+    </div>
+    <div class="gameContainer">
+      <canvas id="myCanvas">Please enable canvas</canvas>
+      <div class="controls">
+        <div id="turnNumber"></div>
+          <button onclick="setTurn(0)"><|</button>
+          <button onclick="decreaseSpeed()"><<</button>
+          <button onclick="previousTurn()"><</button>
+          <button onclick="pause()">Pause/continue</button>
+          <button onclick="nextTurn()">></button>
+          <button onclick="increaseSpeed()">>></button>
+          <button onclick="lastTurn()">|></button>
+      </div>
+    </div>
+    <div>
+      <div id="bot2Score"></div>
+      <div id="bot2Messages"></div>
+    </div>
+  </div>
+  </div>
+  <div id="bot0Messages"></div>
+  <script type="application/javascript" src="replay.js"></script>
+  <script type="application/javascript" src="main.js"></script>
+</body>
+
+</html>
